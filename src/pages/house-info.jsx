@@ -12,7 +12,6 @@ export function HouseInfo() {
 		if (id) {
 			getHouseDetails(id)
 				.then(data => {
-					// учитываем структуру ответа
 					if (data.house) {
 						setHouseData(data.house)
 					} else {
